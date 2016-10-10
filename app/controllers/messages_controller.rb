@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
 	before_action :find_message, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
   def index
-  	@messages = Message.all.order("created_at DESC")
+  	@messages = Message.all.order("created_at DESC").paginate(page: params[:page], per_page: 6)
   end
   def show
   	@message = Message.find(params[:id])

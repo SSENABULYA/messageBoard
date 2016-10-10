@@ -40,6 +40,9 @@
 
     <div class="container-fluid">
       <%= yield %>
+      <div style="text-align: center; margin: 1rem 0 5rem 0;text-decoration: none;">
+        <%= will_paginate @messages, inner_window: 1, outer_window: 0 %>
+      </div> 
     </div>
   </body>
 </html>

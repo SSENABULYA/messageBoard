@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
+gem 'will_paginate', '~> 3.1', '>= 3.1.3'
+gem 'will_paginate-bootstrap'
 #simple_form gem
 gem 'simple_form', '~> 3.3', '>= 3.3.1'
 # Use SCSS for stylesheets
