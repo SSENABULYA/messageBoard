@@ -19,7 +19,13 @@ body{
 	background-color: #fff;
 	font-family: 'playfair Display', sans-serif;
 }
-
+.cf:before, .cf:after {
+	content: "";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Muli' sans-serif;
 	font-weight: 300;
@@ -79,25 +85,25 @@ h1,h2,h3,h4,h5,h6 {
 .navbar-default{
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: #fff;
+	background-color: #1f4864;
 }
-.navbar-nav > li > a {
-	color: #222;
+.navbar-nav  li  a {
+	color: #fff;
 }
 .navbar-link{
-	color: #222;
+	color: #fff;
 }
 .navbar-brand{
-	color: #222;
+	color: #ffffff;
 	letter-spacing: 1.1px;
 }
 /*links style*/
 .links{
 	margin-top: 20px;
-	a{
+}
+.links a{
 		color: #0a8fd5;
 		margin-right: 15px;
-	}
 }
 .btn-default{
 	color: #0a8fd5;
@@ -137,11 +143,47 @@ h1,h2,h3,h4,h5,h6 {
 .comment-posted-by {
 	color: #eee;
 	font-size: 0.8em;
-	.links{
-		margin-top: 20px;
-		a {
-			color: #0a8fd5;
-			margin-right: 15px;
-		}
-	}
+}
+.comment-posted-by, .links{
+	margin-top: 20px;
+}
+
+.comment-posted-by, .links >a {
+	color: #0a8fd5;
+	margin-right: 15px;
+}
+
+.pagination:before, .pagination:after {
+	content: "";
+	display: table;
+}
+
+.pagination:after {
+	clear: both;
+}
+
+.pagination {
+	text-align: center;
+	margin: 1rem 0 5rem 0;
+}
+.previous_page, .current, .next_page {
+	padding: 0.75rem 1rem;
+	margin: 0.25rem;
+	border-radius: .15rem;
+	line-height: 1.25;
+	text-decoration: none;
+	background: #EDEFF5;
+	font-weight: 700;
+	font-size: .75rem;
+	color: #1E2327;
+	font-style: normal;
+}
+.current, .next_page:hover {
+	background: #d2674e;
+	color: #fff;
+}
+
+.current {
+	background: #d2674e;
+	color: #fff;
 }
