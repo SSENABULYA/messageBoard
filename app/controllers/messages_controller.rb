@@ -29,7 +29,7 @@ class MessagesController < ApplicationController
   	@message = current_user.messages.build(message_params)
 
   	if @message.save
-  	   redirect_to root_path
+  	   redirect_to root_path, notice: "Message was sucessfully created!"
   	else
   		render 'new'
   	end

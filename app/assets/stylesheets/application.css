@@ -14,7 +14,7 @@
  *= require_tree .
  *= require_self
  */
-
+@import 'normalize.css';
 body{
 	background-color: #fff;
 	font-family: 'playfair Display', sans-serif;
@@ -68,7 +68,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin-top: 0;
 	color: #fff;
 	margin-bottom: 25px;
-	/*font-weight: bold;*/
+	font-weight: bold;
 }
 .btn-custom{
 	margin-top: 20px;
@@ -77,15 +77,19 @@ h1,h2,h3,h4,h5,h6 {
 	clear: left;
 }
 
+
 /*navbar*/
 .navbar{
 	font-family: 'Muli' sans-serif;
 	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
 }
 .navbar-default{
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: #1f4864;
+	background-color: #E6E6E6;
+	color: #fff;
 }
 .navbar-nav  li  a {
 	color: #fff;
@@ -100,9 +104,10 @@ h1,h2,h3,h4,h5,h6 {
 /*links style*/
 .links{
 	margin-top: 20px;
+	color: #fff;
 }
 .links a{
-		color: #0a8fd5;
+		color: #fff;
 		margin-right: 15px;
 }
 .btn-default{
@@ -183,7 +188,27 @@ h1,h2,h3,h4,h5,h6 {
 	color: #fff;
 }
 
+/*.previous_page:hover {
+	background: #d2674e;
+	color: #fff;
+}
+*/
 .current {
 	background: #d2674e;
 	color: #fff;
+}
+
+#notice_wrapper{
+	width: 100%;
+	position: absolute;
+	background: #01DFD7;
+	z-index: 999;
+}
+
+#notice_wrapper p{
+	color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.25rem;
+	padding: 1.5rem 0;
 }
